@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <form action="submission.html" method="post">
+        <h2>Workshop Survey Form</h2>
+        
+        <h3>Student Information</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Roll Number:</td>
+                <td><input type="text" name="roll" required></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" name="department" required></td>
+            </tr>
+        </table>
+        
+        <h3>Feedback about the Speakers</h3>
+        <table>
+            <tr>
+                <td>Speaker 1:</td>
+                <td><input type="radio" name="speaker1" value="Excellent" required> Excellent</td>
+                <td><input type="radio" name="speaker1" value="Good"> Good</td>
+                <td><input type="radio" name="speaker1" value="Average"> Average</td>
+                <td><input type="radio" name="speaker1" value="Poor"> Poor</td>
+            </tr>
+            <tr>
+                <td>Speaker 2:</td>
+                <td><input type="radio" name="speaker2" value="Excellent" required> Excellent</td>
+                <td><input type="radio" name="speaker2" value="Good"> Good</td>
+                <td><input type="radio" name="speaker2" value="Average"> Average</td>
+                <td><input type="radio" name="speaker2" value="Poor"> Poor</td>
+            </tr>
+        </table>
+        
+        <h3>Overall Arrangements of the Programme</h3>
+        <table>
+            <tr>
+                <td>Rate the arrangements:</td>
+                <td>
+                    <select name="arrangements" required>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Average">Average</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <h3>Any Other Suggestion</h3>
+        <textarea name="suggestion" rows="4"></textarea>
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
